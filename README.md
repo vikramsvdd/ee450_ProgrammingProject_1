@@ -27,6 +27,6 @@ Main Server has sent searching result to client <client ID> using TCP over port 
 C: Client has received results from Main Server: <Department Name> is associated with backend server <Backend Server ID>.
 C: (continues with a new query)
 
-7. I presume my system will fail, if a particular message exceeds 15,000 characters. Also, I have designed the system to be case-sensitive wrt the handling of the department name (say if in the list.txt, there is a department ECE, but if the client inputs ece or eCE, it will fail to recognise that!). Also the server cannot accept more than 3 simultanious connections and promise reliable data communication.
+7. I have designed my system to handle atmost 15,000 characters (scalable). Also, I have designed the system to be case-sensitive wrt the handling of the department name (say if in the list.txt, there is a department ECE, but if the client inputs ece or eCE, it will fail to recognise that!). Also the server can accept atmost 3 connects, but we can easily scale up the system if we want
 
-8. I used Beej's Network Programming using c++ and https://github.com/bozkurthan/Simple-TCP-Server-Client-CPP-Example as primary references, and chatGPT to refine my code.
+8. References:  https://github.com/bozkurthan/Simple-TCP-Server-Client-CPP-Example as primary references, and chatGPT to refine my code.
