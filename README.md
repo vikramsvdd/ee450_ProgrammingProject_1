@@ -4,7 +4,7 @@
 
 3. Platform: Ubuntu 20.04.6
 
-4. In this assignment, I have implemented a simple server client system using the concept of socket programming, where a client queries the backend server ID associated with a department to the server and the main server responds to that query if the department is included in the server's database, else notifies the client regarding the unavailability. Additionally, the server can handle atmost 3 connections (TCP). The Client/s can terminate the connection using keyboard interrupt.
+4. In this project, I have implemented a simple server client system using the concept of socket programming, where a client queries the backend server ID associated with a department to the server and the main server responds to that query if the department is included in the server's database, else notifies the client regarding the unavailability. Additionally, the server can handle atmost 3 connections (TCP). The Client/s can terminate the connection using keyboard interrupt.
 
 5.servermain.cpp : It is the code that drives the server and implements the server functionality.
 
